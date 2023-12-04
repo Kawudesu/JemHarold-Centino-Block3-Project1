@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homescreen">
+    <fragment
+        android:id="@+id/homescreen"
+        android:name="com.example.centino.jemharold.block3.p1.quiz.homescreen"
+        android:label="fragment_homescreen"
+        tools:layout="@layout/fragment_homescreen" >
+        <action
+            android:id="@+id/action_homescreen_to_mini2"
+            app:destination="@id/mini2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mini2"
+        android:name="com.example.centino.jemharold.block3.p1.quiz.mini"
+        android:label="fragment_mini"
+        tools:layout="@layout/fragment_mini" >
+        <action
+            android:id="@+id/action_mini2_to_homescreen"
+            app:destination="@id/homescreen" />
+    </fragment>
+</navigation>
