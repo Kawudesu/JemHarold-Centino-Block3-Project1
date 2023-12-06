@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="100dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/playMusic"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="100dp"
+            android:text="Next" />
+
+
+        <Button
+            android:id="@+id/startMusic"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="216dp"
+            android:text="Play" />
+
+        <LinearLayout
+            android:id="@+id/overviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/musicplaying"
+                android:layout_width="350dp"
+                android:layout_height="360dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/crushiecakes" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

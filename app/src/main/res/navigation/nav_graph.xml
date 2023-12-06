@@ -21,5 +21,17 @@
         <action
             android:id="@+id/action_mini2_to_homescreen"
             app:destination="@id/homescreen" />
+        <action
+            android:id="@+id/action_mini2_to_music"
+            app:destination="@id/music" />
+    </fragment>
+    <fragment
+        android:id="@+id/music"
+        android:name="com.example.centino.jemharold.block3.p1.quiz.music"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_music_to_mini2"
+            app:destination="@id/mini2" />
     </fragment>
 </navigation>

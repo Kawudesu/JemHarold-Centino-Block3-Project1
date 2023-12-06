@@ -18,61 +18,59 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
-            <TextView android:id="@+id/address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:textSize="24dp"
-                android:text="Pangasinan, PH"/>
 
         </LinearLayout>
 
 
-        <LinearLayout android:id="@+id/overviewContainer"
+        <LinearLayout
+            android:id="@+id/overviewContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerInParent="true">
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:text="Clear Sky"/>
+                android:text="Clear Sky"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
             <TextView
                 android:id="@+id/temp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="90dp"
-                android:fontFamily="sans-serif-thin"
-                android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:text="29°C"/>
+                android:fontFamily="sans-serif-thin"
+                android:text="29°C"
+                android:textColor="@color/white"
+                android:textSize="90dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <TextView
                     android:id="@+id/temp_min"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Min Temp: 05:05 AM"/>
+                    android:text="Min Temp: 05:05 AM"
+                    android:textColor="@color/white" />
+
                 <Space
                     android:layout_width="50dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/temp_max"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="Max Temp: 05:05 PM"/>
+                    android:text="Max Temp: 05:05 PM"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>
@@ -115,6 +113,57 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="100dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/playMusic"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="100dp"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/overviewContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginBottom="49dp"
+            android:text="Pangasinan, PH"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/ClockUI"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/overviewContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="244dp"
+            android:layout_marginBottom="226dp"
+            android:text="CLOCK UI"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
     </RelativeLayout>
 
 

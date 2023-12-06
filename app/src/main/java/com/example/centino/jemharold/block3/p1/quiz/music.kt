@@ -6,28 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.centino.jemharold.block3.p1.quiz.databinding.FragmentMiniBinding
+import com.example.centino.jemharold.block3.p1.quiz.databinding.FragmentMusicBinding
 
-class mini : Fragment() {
+class music : Fragment() {
 
-    private lateinit var binding: FragmentMiniBinding
-
+    private lateinit var binding: FragmentMusicBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMiniBinding.inflate(inflater,container,false)
+        binding = FragmentMusicBinding.inflate(inflater,container,false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.playMusic.setOnClickListener{
-            findNavController().navigate(R.id.action_mini2_to_music)
-        }
         binding.backButton.setOnClickListener{
-            findNavController().navigate(R.id.action_mini2_to_homescreen)
+            findNavController().navigate(R.id.action_music_to_mini2)
         }
     }
 }
