@@ -33,5 +33,17 @@
         <action
             android:id="@+id/action_music_to_mini2"
             app:destination="@id/mini2" />
+        <action
+            android:id="@+id/action_music_to_calculator"
+            app:destination="@id/calculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.centino.jemharold.block3.p1.quiz.calculator"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculator_to_homescreen"
+            app:destination="@id/homescreen" />
     </fragment>
 </navigation>

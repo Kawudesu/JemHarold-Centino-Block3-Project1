@@ -30,7 +30,7 @@
             android:text="Back" />
 
         <Button
-            android:id="@+id/playMusic"
+            android:id="@+id/nextButton"
             android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -48,10 +48,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
-            android:layout_marginEnd="115dp"
-            android:layout_marginBottom="216dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="217dp"
             android:text="Play" />
-
 
         <LinearLayout
             android:id="@+id/overviewContainer"
@@ -66,9 +65,26 @@
                 android:layout_height="360dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
-                android:src="@drawable/logo" />
+                android:src="@drawable/albumcover" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_above="@+id/startMusic"
+            android:layout_below="@+id/overviewContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="15dp"
+            android:text="Before"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
     </RelativeLayout>
 
 </RelativeLayout>

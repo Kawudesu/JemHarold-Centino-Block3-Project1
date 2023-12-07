@@ -27,6 +27,13 @@ class music : Fragment() {
 
         mediaPlayer = MediaPlayer()
 
+        binding.backButton.setOnClickListener {
+            findNavController().navigate(R.id.action_music_to_mini2)
+        }
+        binding.nextButton.setOnClickListener {
+            findNavController().navigate(R.id.action_music_to_calculator)
+        }
+
         try {
             mediaPlayer.setDataSource(resources.openRawResourceFd(R.raw.whistle).fileDescriptor)
             mediaPlayer.prepare()
@@ -35,14 +42,14 @@ class music : Fragment() {
                 findNavController().navigate(R.id.action_music_to_mini2)
             }
 
-            binding.playMusic.setOnClickListener {
+            binding.startMusic.setOnClickListener {
                 if (!mediaPlayer.isPlaying) {
                     mediaPlayer.start()
-                    binding.playMusic.isEnabled = false
+                    binding.startMusic.isEnabled = false
                 }
             }
             mediaPlayer.setOnCompletionListener {
-                binding.playMusic.isEnabled = true
+                binding.startMusic.isEnabled = true
             }
         } catch (e: Exception) {
             e.printStackTrace()
